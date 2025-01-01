@@ -1,0 +1,10 @@
+
+services:
+  floorballkamp:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target/logs:/opt/jboss/wildfly/standalone/log
+      - ./target/floorballkamp.war:/opt/jboss/wildfly/standalone/deployments/floorballkamp.war

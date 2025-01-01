@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Floorballkamp</title>
+
+    <link href="fonts/font.css" type="text/css" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body class="grey darken-3 white-text">
+
+    <nav class="purple darken-2" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="https://floorballkamp.dk" class="brand-logo">Floorballkamp.dk</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://floorball.dk">Floorball.dk</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="https://floorball.dk">Floorball.dk</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <div class="center">
+                <h2 id="gameId">Kamp #123456</h2>
+            </div>
+
+            <!-- Handlinger for hjemmeholdet -->
+            <div class="row">
+                <div class="col l6 m12 s12">
+                    <div class="row">
+                        <div class="col l11 m12 s12 grey darken-2 z-depth-4">
+                            <div class="row">
+                                <div class="col s10">
+                                    <span id="homeTeamName" class="flow-text truncate">-</span>
+                                </div>
+                                <div class="col s2 right-align grey darken-1">
+                                    <span id="homeTeamScore" class="flow-text">1</span>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <span class="flow-text">Mål</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 right-align">
+                                    <a id="homeScoreAdd" href="#" class="btn-floating btn-large purple darken-2"><i class="material-icons">add</i></a>
+                                    <a id="homeScoreRemove" href="#" class="btn-floating btn-large purple darken-2"><i class="material-icons">remove</i></a>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <span class="flow-text">Udvisning</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 right-align">
+                                    <a href="#" class="btn-floating btn-large lime darken-4">2</a>
+                                    <a href="#" class="btn-floating btn-large lime darken-4">2+2</a>
+                                    <a href="#" class="btn-floating btn-large lime darken-4">2+10</a>
+                                    <a href="#" class="btn-floating btn-large red darken-4"><i class="material-icons">crop_portrait</i></a>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <span class="flow-text">Øvrige</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 right-align">
+                                    <a href="#" class="btn btn-large purple darken-2" style="border-radius: 30px;">Straffeslag</a>
+                                    <a href="#" class="btn btn-large purple darken-2" style="border-radius: 30px;">Timeout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Handlinger for udeholdet -->
+                <div class="col l6 m12 s12">
+                    <div class="row">
+                        <div class="col l11 m12 s12 offset-l1 grey darken-2 z-depth-4">
+                            <div class="row">
+                                <div class="col s10">
+                                    <span id="awayTeamName" class="flow-text truncate">-</span>
+                                </div>
+                                <div class="col s2 right-align grey darken-1">
+                                    <span id="awayTeamScore" class="flow-text">2</span>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <span class="flow-text">Mål</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 right-align">
+                                    <a id="awayScoreAdd" href="#" class="btn-floating btn-large purple darken-2"><i class="material-icons">add</i></a>
+                                    <a id="awayScoreRemove" href="#" class="btn-floating btn-large purple darken-2"><i class="material-icons">remove</i></a>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <span class="flow-text">Udvisning</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 right-align">
+                                    <a href="#" class="btn-floating btn-large lime darken-4">2</a>
+                                    <a href="#" class="btn-floating btn-large lime darken-4">2+2</a>
+                                    <a href="#" class="btn-floating btn-large lime darken-4">2+10</a>
+                                    <a href="#" class="btn-floating btn-large red darken-4"><i class="material-icons">crop_portrait</i></a>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <span class="flow-text">Øvrige</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 right-align">
+                                    <a href="#" class="btn btn-large purple darken-2" style="border-radius: 30px;">Straffeslag</a>
+                                    <a href="#" class="btn btn-large purple darken-2" style="border-radius: 30px;">Timeout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Protokol -->
+            <div class="row grey darken-2 z-depth-4">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Kampprotokol</h4>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <th>Periode</th>
+                                <th>Tidspunkt</th>
+                                <th>Stilling</th>
+                                <th>Spiller</th>
+                                <th>Handling</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>00:00</td>
+                            <td>0 - 0</td>
+                            <td></td>
+                            <td>Kampen er ikke startet endnu</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Spillerliste hjemmehold -->
+            <div class="row grey darken-2 z-depth-4">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Hjemmehold</h4>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <table class="highlight">
+                        <col style="width: 10%">
+                        <col style="width: 90%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Navn</th>
+                            </tr>
+                        </thead>
+                        <tbody id="homeTeamList">
+    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Spillerliste udehold -->
+            <div class="row grey darken-2 z-depth-4">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Udehold</h4>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <table class="highlight">
+                        <col style="width: 10%">
+                        <col style="width: 90%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Navn</th>
+                            </tr>
+                        </thead>
+                        <tbody id="awayTeamList">
+    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
