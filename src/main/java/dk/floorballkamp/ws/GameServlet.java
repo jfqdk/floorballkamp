@@ -47,6 +47,14 @@ public class GameServlet extends HttpServlet {
                 game.addScoreToAwayTeam();
                 break;
             }
+            case "/homeScoreSubtract": {
+                game.subtractScoreFromHomeTeam();
+                break;
+            }
+            case "/awayScoreSubtract": {
+                game.subtractScoreFromAwayTeam();
+                break;
+            }
             default:
                 httpServletResponse.sendError(HttpServletResponse.SC_BAD_REQUEST);
                 return;
